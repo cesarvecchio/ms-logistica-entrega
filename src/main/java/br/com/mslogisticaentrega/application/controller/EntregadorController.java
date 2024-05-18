@@ -1,11 +1,15 @@
 package br.com.mslogisticaentrega.application.controller;
 
-import br.com.mslogisticaentrega.application.request.EntregadorRequest;
-import br.com.mslogisticaentrega.application.response.EntregadorResponse;
+import br.com.mslogisticaentrega.application.controller.request.EntregadorRequest;
+import br.com.mslogisticaentrega.application.controller.response.EntregadorResponse;
+import br.com.mslogisticaentrega.domain.service.ClienteService;
 import br.com.mslogisticaentrega.domain.service.EntregadorService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/entregadores")
@@ -15,6 +19,12 @@ public class EntregadorController {
 
     public EntregadorController(EntregadorService entregadorService) {
         this.entregadorService = entregadorService;
+    }
+
+    @GetMapping
+    public ResponseEntity<List<EntregadorResponse>> buscarTOdos() {
+
+        return ResponseEntity.ok(entregadorService.buscarTodos());
     }
 
     @PostMapping

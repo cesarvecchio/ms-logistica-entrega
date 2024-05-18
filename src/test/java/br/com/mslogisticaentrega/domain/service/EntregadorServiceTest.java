@@ -1,12 +1,12 @@
 package br.com.mslogisticaentrega.domain.service;
 
-import br.com.mslogisticaentrega.application.controller.exceptions.JaCadastradoException;
-import br.com.mslogisticaentrega.application.controller.exceptions.NaoEncontradoException;
-import br.com.mslogisticaentrega.application.request.EntregadorRequest;
-import br.com.mslogisticaentrega.application.response.EntregadorResponse;
+import br.com.mslogisticaentrega.infra.exceptions.JaCadastradoException;
+import br.com.mslogisticaentrega.infra.exceptions.NaoEncontradoException;
+import br.com.mslogisticaentrega.application.controller.request.EntregadorRequest;
+import br.com.mslogisticaentrega.application.controller.response.EntregadorResponse;
 import br.com.mslogisticaentrega.domain.entity.EntregadorEntity;
 import br.com.mslogisticaentrega.infra.repository.EntregadorRepository;
-import br.com.mslogisticaentrega.utils.Utils;
+import br.com.mslogisticaentrega.application.utils.Utils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;

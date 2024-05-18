@@ -1,4 +1,4 @@
-package br.com.mslogisticaentrega.utils;
+package br.com.mslogisticaentrega.application.utils;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;

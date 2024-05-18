@@ -18,8 +18,9 @@ public class EntregadorEntity {
     private String nome;
     private String cpf;
     private String email;
-    @OneToMany
-    private List<PedidoEntity> pedidoList;
+    private String cep;
+    //@OneToMany
+    //private List<PedidoEntity> pedidoList;
 
     public EntregadorEntity(Integer id, String nome, String cpf, String email) {
         this.id = id;

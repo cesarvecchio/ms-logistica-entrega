@@ -1,4 +1,4 @@
-package br.com.mslogisticaentrega.application.controller.exceptions;
+package br.com.mslogisticaentrega.infra.exceptions;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;

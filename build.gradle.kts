@@ -33,12 +33,18 @@ dependencies {
     implementation("io.gatling.highcharts:gatling-charts-highcharts:3.9.5")
     implementation("io.qameta.allure:allure-rest-assured:2.23.0")
 
+    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:4.1.1")
+    implementation("org.springframework.cloud:spring-cloud-dependencies:2023.0.1")
+
+    implementation("org.springframework.boot:spring-boot-starter-mail")
+
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
 
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
+    //developmentOnly("org.springframework.boot:spring-boot-devtools")
 
-    runtimeOnly("com.h2database:h2")
+//    runtimeOnly("com.h2database:h2")
+    runtimeOnly("org.postgresql:postgresql")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.rest-assured:json-schema-validator:5.3.1")

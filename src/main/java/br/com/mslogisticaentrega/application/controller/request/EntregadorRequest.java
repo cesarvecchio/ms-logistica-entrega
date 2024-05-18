@@ -1,4 +1,4 @@
-package br.com.mslogisticaentrega.application.request;
+package br.com.mslogisticaentrega.application.controller.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

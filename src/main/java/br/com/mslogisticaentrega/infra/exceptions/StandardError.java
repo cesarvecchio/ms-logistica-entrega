@@ -1,4 +1,4 @@
-package br.com.mslogisticaentrega.application.controller.exceptions;
+package br.com.mslogisticaentrega.infra.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
